@@ -44,7 +44,7 @@ if st.button("💰 Predict Price"):
 
         try:
             response = requests.post(
-                "http://127.0.0.1:5000/predict",
+                "https://house-price-api-8k09.onrender.com/predict",
                 json=data
             )
 
@@ -77,10 +77,14 @@ if st.button("💰 Predict Price"):
                     temp = data.copy()
                     temp["living area"] = a
 
+                    # res = requests.post(
+                    #     "http://127.0.0.1:5000/predict",
+                    #     json=temp
+                    # ).json()
                     res = requests.post(
-                        "http://127.0.0.1:5000/predict",
+                        "https://house-price-api-8k09.onrender.com/predict",
                         json=temp
-                    ).json()
+                        ).json()
 
                     prices.append(res["predicted_price"])
 
