@@ -52,6 +52,13 @@ to deliver a complete real-world solution.
 
 ---
 
+##  Live Demo
+
+ **Live Application:**  
+https://house-price-prediction-vtreja3pj4cryvqpqzchif.streamlit.app/
+
+---
+
 ##  Project Structure
 House-Price-Prediction
 │
